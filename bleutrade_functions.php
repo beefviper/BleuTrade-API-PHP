@@ -249,7 +249,7 @@ function get_deposit_address($currency) {
           address
   return:	?
 */
-function withdraw($currency, $quanity, $address) {
+function withdraw($currency, $quantity, $address) {
   $command = 'account/withdraw';
   $params = '?currency=' . $currency;
   $params .= '&quantity=' . $quantity;
