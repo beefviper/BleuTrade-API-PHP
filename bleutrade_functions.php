@@ -253,7 +253,7 @@ function withdraw($currency, $quanity, $address) {
   $command = 'account/withdraw';
   $params = '?currency=' . $currency;
   $params .= '&quantity=' . $quantity;
-  $params .= '&adress=' . $address;
+  $params .= '&address=' . $address;
   $query = $command . $params;
   $result = make_private_api_call($query);
   
